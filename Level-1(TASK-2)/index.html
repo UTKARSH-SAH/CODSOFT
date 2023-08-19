@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List 2023</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <header>
+      <h1>TO-DO LIST</h1>
+      <form id="task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="task-input"
+          placeholder="Enter your daily task.."
+        />
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+    </header>
+    
+    <main>
+      <section class="task-list">
+        <h2>List of Tasks</h2>
+        <div class="Show-Empty"></div>
+        <img src="trash-can.png" alt="" />
+
+        <div id="tasks">
+          <input type="checkbox" class="text" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  
+  </body>
+
+</html>

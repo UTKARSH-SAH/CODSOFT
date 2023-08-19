@@ -1,0 +1,168 @@
+/* Import the Roboto font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Apply box-sizing to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the font and background for the page */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  background: linear-gradient(45deg, hwb(27 2% 30%), #4b0b49);
+}
+
+/* Add an animation to elements with the .text-center class */
+.text-center {
+  animation: colorChange 5s infinite;
+}
+/* Define the colorChange animation */
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #e88522;
+  }
+  100% {
+    color: #f61313;
+  }
+}
+
+/* Set the width, height, and flex properties for the body */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set the background color and border radius for the wrapper */
+.wrapper {
+  background-color: azure;
+  border-radius: 16px;
+}
+
+/* Set the border, padding, and box shadow for the container */
+.container {
+  border: 1px solid #131314;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0px 3px 15px rgba(6, 10, 31, 0.982);
+  margin-top: 10px;
+}
+
+/* Set the font, font weight, and color for the heading */
+h1 {
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+
+/* Set the width, height, padding, border radius, and box shadow for the input field */
+.input {
+  width: 330px;
+  height: 60px;
+  border: none;
+  padding: 24px;
+  border-radius: 16px;
+  /* border: 1px solid #061b44; */
+  margin: 10px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgb(95, 130, 196);
+  background-color: rgb(250, 251, 251);
+  font-size: 40px;
+  text-align: right;
+  color: rgb(23, 22, 22);
+  animation: shake 10s infinite;
+}
+
+/* Define the shake animation for the input field */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Set the display and gap for the row */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Set the font size, width, height, margin, border radius, background color, and box shadow for the buttons */
+.button {
+  font-size: 20px;
+  width: 66px;
+  height: 66px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #827777;
+  color: white;
+  font-size: 20px;
+  border: none;
+  box-shadow: -5px -5px 15px rgba(190, 185, 185, 0.986);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Define the hover effect for the buttons */
+button:hover {
+  transform: scale(1.2);
+}
+.equalBtn {
+  background-color: #f61313;
+}
+.operator {
+  color: rgb(247, 250, 250);
+}
+.symbol {
+  background-color: #312929;
+}
+.symbolbtn {
+  background-color: #e88522;
+}
+
+/* Adjust the styles for smaller screens */
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 15px;
+  }
+  .button {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .input {
+    width: 250px;
+    height: 35px;
+    font-size: 25px;
+    border: none;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
