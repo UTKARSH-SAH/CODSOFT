@@ -185,6 +185,8 @@ section {
   font-weight: 600;
 }
 
+/*animation: slideIn 4s ease-in-out;*/
+
 @keyframes slideIn {
   0% {
     transform: translateX(-100%);
