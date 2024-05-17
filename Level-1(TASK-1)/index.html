@@ -1,16 +1,247 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Utkarsh Sah</div>
-      <div>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Utkarsh Sah</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Utkarsh Sah</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Utkarsh Sah</h1>
+      <p class="section__text__p2">BTech CSE undergrad || Actively Learning Web Development || DSA || CSE'24 🖥 || Tech
+        Enthusiast</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Resume-utkarsh-sah.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/utkarsh-sah/'" />
+        <img src="./assets/github.png" class="icon" onclick="location.href='https://github.com/UTKARSH-SAH'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Web Developer Intern @Codsoft ||</p>
+            <p>Web Developer Intern @Acmegrade</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor of Technology in Computer Science and Engineering (B.Tech CSE'24) || Graphic Era Hill University
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Passionate B.Tech Computer Science Undergrad | Web Developer | User-Friendly Front-End Products
+            <br>🚀 Seeking Opportunities to Learn from Industry Leaders 🌟
+            <br>🌐 I am a dedicated computer science undergrad actively expanding my knowledge in web development. With
+            a strong passion for creating user-friendly front-end products, I strive to push boundaries and deliver
+            exceptional results.
+            <br>🌱 Always in pursuit of new skills and experiences, I am excited to explore opportunities that allow me
+            to grow and learn from industry leaders. I am particularly interested in #crypto, #aitools, #teamwork and
+            #webdevelopment.
+            <br>💻 Techstack: C++, HTML, CSS, JS and React | 🛠️ Productivity Tools: Notion and Figma
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/html-5.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML5</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/css-3.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/java-script.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/react.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Productivity Tools<h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/notion.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Notion</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/figma.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Figma</h3>
+                  </div>
+                </article>
+
+                <article>
+                  <img src="./assets/github.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>GitHub</h3>
+                  </div>
+                </article>
+              </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">GITSEEKER</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/UTKARSH-SAH/GitSeeker-Browser-Extension'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://chrome.google.com/webstore/detail/gitseeker/nmddmhimlhheijaedilficeggkpecpbn'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">PASSTOOL</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/UTKARSH-SAH/PASSTOOL-PASSWORD-VALIDATOR-GENERATOR'">Github
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">IQ LIVE PLUS</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/UTKARSH-SAH/QUIZ-GAME-IQLIVEPLUS'">Github
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="form-container">
+      <div class="form">
+        <span class="heading">Get in touch</span>
+        <input placeholder="Name" type="text" class="input">
+        <input placeholder="Email" id="mail" type="email" class="input">
+        <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+        <div class="button-container">
+          <div class="send-button">Send</div>
+          <div class="reset-button-container">
+            <div id="reset-btn" class="reset-button">Reset</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">utkarshsah2001@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/utkarsh-sah/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -19,324 +250,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Utkarsh Sah</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Utkarsh Sah</h1>
-        <p class="section__text__p2">BTech CSE undergrad || Actively Learning Web Development || DSA || CSE'24 🖥 || Tech Enthusiast</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Resume-utkarsh-sah.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/utkarsh-sah/'"
-          />
-          <img
-            src="./assets/github.png"
-            class="icon"
-            onclick="location.href='https://github.com/UTKARSH-SAH'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Web Developer Intern @Codsoft ||</p>
-              <p>Web Developer Intern @Acmegrade</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Technology in Computer Science and Engineering (B.Tech CSE'24) || Graphic Era Hill University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>Passionate B.Tech Computer Science Undergrad | Web Developer | User-Friendly Front-End Products
-               <br>🚀 Seeking Opportunities to Learn from Industry Leaders 🌟
-               <br>🌐 I am a dedicated computer science undergrad actively expanding my knowledge in web development. With a strong passion for creating user-friendly front-end products, I strive to push boundaries and deliver exceptional results.
-               <br>🌱 Always in pursuit of new skills and experiences, I am excited to explore opportunities that allow me to grow and learn from industry leaders. I am particularly interested in #crypto, #aitools, #teamwork and #webdevelopment.
-               <br>💻 Techstack: C++, HTML, CSS, JS and React | 🛠️ Productivity Tools: Notion and Figma
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/html-5.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML5</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/css-3.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./assets/java-script.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./assets/react.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Productivity Tools<h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/notion.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Notion</h3>
-                  </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/figma.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./assets/github.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitHub</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">GITSEEKER</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/UTKARSH-SAH/GitSeeker-Browser-Extension'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://chrome.google.com/webstore/detail/gitseeker/nmddmhimlhheijaedilficeggkpecpbn'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">PASSTOOL</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/UTKARSH-SAH/PASSTOOL-PASSWORD-VALIDATOR-GENERATOR'"
-              >Github
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">IQ LIVE PLUS</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/UTKARSH-SAH/QUIZ-GAME-IQLIVEPLUS'"
-              >Github
-              </button>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <h1 class="title">Contact Me</h1>
-      <div class="form-container">
-       <div class="form">
-        <span class="heading">Get in touch</span>
-        <input placeholder="Name" type="text" class="input">
-        <input placeholder="Email" id="mail" type="email" class="input">
-        <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
-        <div class="button-container">
-        <div class="send-button">Send</div>
-        <div class="reset-button-container">
-          <div id="reset-btn" class="reset-button">Reset</div>
-        </div>
-        </div>
-        </div>
-      </div>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">utkarshsah2001@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/utkarsh-sah/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Utkarsh Sah. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p>Copyright &#169; 2023 Utkarsh Sah. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
